@@ -1,0 +1,108 @@
+:root{
+    --cor0: #DCDDFA;
+    --cor1: #101382;
+    --cor2: #151BB3;
+    --cor3: #7D7FCC;
+    --cor4: #060833;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte2: 'Times New Roman', Times, serif;
+    background-color: #DCDDFA;
+}
+
+body{
+  background-color: #DCDDFA;
+  font-family: var(--fonte2);
+  color: var(--cor0);
+  background-color: var(--cor3);
+  text-align: justify;
+}
+
+#cabeçalho{
+    margin: 20px
+    margin-bottom: 20px;
+    min-height: 150px;
+    color: #DCDDFA;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2)); 
+}
+main p{
+    margin: 15px 0px; /*dando espaço para os paragrafos*/
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.2em;/*espaçamento entre linhas*/
+}
+
+#tema{
+    font-size: 3em;
+    margin-top: 30px;
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.245);
+}
+
+h2{
+    color: white;
+    background-image: linear-gradient(to right, #151ab3ea , transparent);
+}
+
+main a{
+    text-decoration: none;
+    color: #060833;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+h3{
+    color: #DCDDFA;
+    background-image: linear-gradient(to right, #151ab3ea , transparent);
+}
+
+header > p {
+    text-align: center;
+    font-size: 1.2em;/* tam. da fonte*/
+    max-width: 500px;/*max de tamanho da caixa de texto*/
+    padding-right: 10px; /*tamanho de caixa para ter quebra de linha*/
+    padding-left: 10px;   
+    margin: auto;/*para centralizar qnd usa o "width", pq fica um bloco*/
+    
+}
+nav{
+    margin: 15px;
+    background-color: #1116b2;
+    padding: 10px;
+    box-shadow: 2px 2px 3px var(--cor4);
+}
+
+.corpo{
+    margin: 1px;
+    padding: 20px 30px 50px;
+}
+
+nav > a{
+    padding: 10px; /*separação das palavras*/
+    border-radius: 5px; /*borda para a caixa de texto*/
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 1s; /*transição e tempo de transição*/
+}
+
+main a:hover {
+    background-color:#7D7FCC;
+    padding: 2px 6px;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    background-color:#dfdfe4c8;
+    padding: 4px 6px;
+    transition-duration: 1s;
+}
+
+footer{
+    background-color: #060833;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+a.externo::after{
+    content: '\00A0\1F517'
+}

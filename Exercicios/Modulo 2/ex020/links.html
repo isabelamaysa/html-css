@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        a{
+            color: brown;
+            text-decoration: none; /* para tirar o sublinhado do link*/
+            font-weight: bold;/*colocar em negrito*/
+        }
+
+        a:visited{  /* Pseudoclasse para mostrar que ja visitou o link*/
+            color: blue;
+        }
+
+        a:hover{
+            color: black;/* a cor q vai ficar qnd passar o mouse*/
+            text-decoration: underline; /*para sublinhar qnd passar o mouse*/
+        }
+
+        a:active{ /*para qnd clicar, mudar a cor*/
+            color: yellow;
+        }
+
+        a::before { /* oq ira aparecer antes do link*/
+            content: '=>'
+        }
+        a::after{ /*a(link), ::(pseudoElemento), after(depois) = depois de todos os links*/
+            content: 'link'; /* oq ira aparecer depois do link*/
+            color: aqua; /*se n colocar cor, vai ficar a mesma do link*/
+
+            /*voce pode tbm criar uma classe e colocar no lugar do 'a'. ex: ".especial::after"*/
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCADYavR2U-7mbLJxqc_Trrw" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/?locale=pt_BR" target="_blank">Facebook</a></li>
+    </ul>
+    
+</body>
+</html>
