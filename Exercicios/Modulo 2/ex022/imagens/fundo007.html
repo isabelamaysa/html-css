@@ -7,10 +7,10 @@
     <style>
         #container{
             background-image: url(target001.png);
-            background-size: 100% 100%;
+            background-size: 100% 100%; /*para ocupar a imagem inteira*/
 
             position: relative;
-            height: 96vh; /*altura*/
+            height: 96vh; /*altura do quadrado*/
             padding: 10px;
             background-color: purple;
         }
@@ -19,13 +19,15 @@
             background-image: url(target001.png);
             background-size: 100% 100%;
 
-            position: absolute;
+            position: absolute; /*para utilizar o left e o top*/
             height: 200px;
-            width: 400px;
+            width: 400px; /*largura*/
             background-color: yellow;
 
-            left: 27%;
-            top:36%;
+            left: 50%; /*a distancia quem vem da borda ate a ponta do quadrado*/
+            top: 50%; /*a distancia quem vem da parte de cima ate a ponta do quadrado*/
+
+            transform: translate(-50%, -50%); /*para mover a imagem tbm*/
             
         }
     </style>
