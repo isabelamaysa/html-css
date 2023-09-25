@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table{
+            width: 300px; /*definir o tamanho da caixa*/
+            text-align: center;
+            border-collapse: collapse; /*deixar as bordas juntas*/
+        }
+        td{
+            border: 1px solid black; /*borda da tabela*/
+            padding: 6px;
+        }
+        thead, tfoot{
+            background-color: black;
+            padding: 10px;
+            color: aliceblue;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aquamarine;
+            box-shadow: 2px 3px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando minha primeira tabela</h1>
+    
+    <table> 
+        <caption>Numeração Exel</caption>
+        <thead>
+            <tr>
+                <th scope="col">Linha 1</th>
+                <th scope="col">Linha 2</th>
+                <th scope="col">Linha 3</th>
+            </tr>
+        </thead>
+        <tr> 
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de linha</th>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
