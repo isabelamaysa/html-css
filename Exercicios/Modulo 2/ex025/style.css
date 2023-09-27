@@ -1,0 +1,15 @@
+body{
+    background-color: rgba(249, 158, 158, 0.734);
+}
+h1, h2{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+fieldset{
+    background-color: rgba(201, 36, 36, 0.693) ;
+}
+legend{
+    font-weight: bold;
+}

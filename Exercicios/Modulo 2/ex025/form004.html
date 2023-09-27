@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de casamento! ❤️</h1>
+    <h2>Preencha esse formulario e verefique se esta apto a casar com a preciosa Isabela Maysa 🫶</h2>
+
+    <fieldset>
+        <legend>Preencha seus dados</legend>
+        <form action="teste.html" method="post">
+            <p><label for="inome">Nome Completo</label>
+            <input type="text" name="Nome" id="inome" placeholder="Nome completo do sortudo" autocomplete="name" required></p>
+
+            <p><label for="idia">Data de Nascimento</label>
+            <input type="date" name="dia" id="idia" value="01/02/2003"></p>
+
+            <p><label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required></p>
+
+            <p><label for="itelefone">Telefone</label>
+            <input type="tel" name="Telefone" id="itelefone" autocomplete="telefone" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx"></p>
+        </form>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    <p>Boa sorte!</p>
+
+</body>
+</html>
