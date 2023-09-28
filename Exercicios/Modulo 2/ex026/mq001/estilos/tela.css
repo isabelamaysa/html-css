@@ -1,0 +1,43 @@
+/*estilo para tela*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-color: darkgray; /*cor do cabeçalho*/
+}
+
+menu ul{
+    list-style-type: none;
+    background-color: rgb(135, 129, 129);/*cor do menu*/
+}
+
+menu li{
+    background-color: rgb(85, 81, 81);/*cor de cada item do menu*/
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+article{
+    padding: 8px;
+    margin: auto;
+    width: 500px;
+    display: block;
+    text-align: justify;
+}
+
+article h2{
+    padding: 12px;
+}

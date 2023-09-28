@@ -1,0 +1,23 @@
+/*estilo para impressora*/
+
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+}
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: 'Esse artigo foi alterado para versão de impressão';
+}
