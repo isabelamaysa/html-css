@@ -30,6 +30,40 @@
         </p>
 
         <p>
+            <!--para criar uma lista seletora
+            "optgroup" = para criar grupos dentro da lista-->
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas-Gerais</option>
+                    <option value="Rj">Rio de Janeiro</option>
+                    <option value="Sp">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernanbuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <!--para criar uma caixa com uma lista sugerida dentro
+            "datalist" = é essa lista sugerida q aparece na caixa-->
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
