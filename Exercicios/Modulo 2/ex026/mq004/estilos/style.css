@@ -1,0 +1,44 @@
+/*Versão mobile firts*/
+
+*{
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    width:100vw ;
+    height: 100vh;
+}
+
+body{
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.721);
+    width: 600px;
+    margin: auto; /*centralizar o main*/
+    margin-top: 20px;
+    border-radius: 10px; /*aredondar a borda*/
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+img{
+    display: block; /*mostrar as imagensa*/
+    margin: auto; /*centralizar as imagens*/
+}
+
+#phone { display: block;}
+#tablet { display: none;}
+#print{ display: none;}
+#pc { display: none;}
+#tv {display: none;}

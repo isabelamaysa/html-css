@@ -1,0 +1,76 @@
+/*para todas versões*/
+
+/* Typical device Breakpoints
+-------------------------------
+pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 1200px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print { /*para impressão*/
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Essa pagina foi adaptada para impressão através do curso em video';
+        text-decoration: overline;
+        font-size: 1em;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    #phone { display: none;}
+    #tablet { display: none;}
+    #print{ display: block;}
+    #pc { display: none;}
+    #tv {display: none;}
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone { display: none;}
+    #tablet { display: block;}
+    #print{ display: none;}
+    #pc { display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*Desktop - PC*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone { display: none;}
+    #tablet { display: none;}
+    #print{ display: none;}
+    #pc { display: block;}
+    #tv {display: none;}
+
+}
+
+@media screen and (min-width: 1200px) { /*Grande telas - TV*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+
+    #phone { display: none;}
+    #tablet { display: none;}
+    #print{ display: none;}
+    #pc { display: none;}
+    #tv {display: block;}
+
+}
