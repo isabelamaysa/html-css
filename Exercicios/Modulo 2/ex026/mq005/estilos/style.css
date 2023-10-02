@@ -14,12 +14,25 @@ header{
     
 }
 
+#burguer{
+    background-color: rgb(47, 47, 47);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /*para mudar o formato do mause e ele virar uma mão*/
+}
+
+#burguer:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
 h1{
     text-align:center;
     padding: 10px;
 }
 
-menu > a{
+menu > ul > li> a{
     
     background-color: rgb(91, 89, 89);
     color: white;
@@ -31,13 +44,14 @@ menu > a{
     border-top: 2px solid gray;
 }
 
-a:hover{
+menu > ul > li > a:hover{
     background-color: darkgray;
 }
 
 menu{
     padding: 10px;
     padding-top: 12px;
+    display: none;
 }
 
 article{
