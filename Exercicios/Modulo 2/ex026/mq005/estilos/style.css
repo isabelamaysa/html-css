@@ -15,7 +15,8 @@ header{
 }
 
 #burguer{
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(72, 72, 72);
+    color: aliceblue;
     display: block;
     text-align: center;
     padding: 10px;
@@ -24,7 +25,7 @@ header{
 
 #burguer:hover{
     background-color: aliceblue;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 h1{
@@ -32,26 +33,30 @@ h1{
     padding: 10px;
 }
 
-menu > ul > li> a{
-    
-    background-color: rgb(91, 89, 89);
+menu{
+    background-color: darkgray;
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+li{
+    background-color: rgb(96, 93, 93);
+    margin: 1px;
+    padding: 10px;
+    text-align: center;
+}
+
+a{
     color: white;
     text-decoration: none;
-    padding: 10px;
-    padding-bottom: 10px;
-    margin: 1px;
-    font-size: 17px;
-    border-top: 2px solid gray;
+
 }
 
-menu > ul > li > a:hover{
-    background-color: darkgray;
-}
-
-menu{
-    padding: 10px;
-    padding-top: 12px;
-    display: none;
+li:hover{
+    background-color: rgb(164, 164, 164);
 }
 
 article{
